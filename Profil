@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Optimis</title>
+</head>
+<body bgcolor="white">
+<center><table border="1">
+<tr>
+<td colspan="4" width="950" height="150px" bgcolor="pink"><font face="Impact" size="10px" color="blue"><center><Marquee>SELAMAT DATANG DI TOKO PERALATAN SEKOLAH & PRINT OPTIMIS</Marquee></center></font></td>
+</tr>
+<tr>
+<td bgcolor="white" height="30"><center ><a href="home.html">Home</a></center></td>
+<td bgcolor="white" height="30"><center ><a href="profil.html">PROFIL</a></center></td>
+<td bgcolor="white" height="30"><center ><a href="produk.html">PRODUK</a></center></td>
+<td bgcolor="white" height="30"><center ><a href="pembelian.html">PEMBELIAN</a></center></td>
+</tr>
+<td bgcolor="white" colspan="10" height="380">
+<script type="text/JavaScript">
+function alat tulis()
+{
+var model=(document.fform.imodel.value);
+var jumlahalattulis=parseFloat(document.fform.ijumlah.value);
+var ht=0.0;
+var total=0.0;
+if  (model=="Buku")
+{
+ht=10000;
+}
+else if(model=="Pulpen")
+{
+ht=15000;
+}
+else
+{
+ht=20000;
+}
+total=jumlahalattulis*ht;
+alert=("Maka totalnya adalah = "+total)
+}
+</script>
+<style type="">
+table, td{border:1px solid blue;
+padding:5px;}
+th{background-color:pink;
+border : 3px solid blue;
+color : black;
+height :40px;
+td{height:30px
+color: red;}
+</style>
+<body>
+<table border="1" width="80%"  align="center">
+<h1><center>Pembelian Peralatan Sekolah</center></h1>
+<form name="fform">
+<tr><th>
+Alat tulis :
+<select name="imodel" size="1">
+<option value="Buku">Buku</option>
+<option value="Pulpen">Pulpen</option>
+<option value="Stabilo">Stabilo</option>
+<option value="Penggaris">Penggaris</option>
+<option value="Spidol">Spidol</option>
+<option value="Tipex">Tipex</option>
+<option value="Pensil">Pensil</option>
+</select></tr></th>
+<tr><th>
+Jumlah Alat Tulis: <input type="text" size="40" name="ijumlah">
+</th></tr>
+<tr>
+<th>
+<input type="button" value="hitung" onclick="alat tulis()"></th>
+</tr>
+</table>
+<tr>
+<td colspan="4" height="50" bgcolor="black"><center><font color="white">&copy;Optimis 2020</font></center></td>
+</tr>
+</table></center>
+</body>
+</html>
